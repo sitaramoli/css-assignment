@@ -46,7 +46,7 @@
             visibility: visible;
             color: rgb(220, 20, 60);
         }
-        svg:hover #fingerprint-path{
+        .tooltip:hover #fingerprint-path{
            stroke: rgb(30, 144, 255);
         }
 
