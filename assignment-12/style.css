@@ -13,7 +13,7 @@
             display: inline-block;
         }
         .tooltip .tooltip-text{
-            visibility: hidden;
+            display: none;
             background-color: white;
             text-align: center;
             border-radius: 5px;
@@ -43,7 +43,7 @@
             border-color: transparent transparent white transparent;
         }
         .tooltip:hover .danger-text, .tooltip:hover{
-            visibility: visible;
+            display: block;
             color: rgb(220, 20, 60);
         }
         .tooltip:hover #fingerprint-path{
@@ -66,7 +66,7 @@
             border-color: white transparent transparent transparent;
         }
         .tooltip:hover .fingerprint-text{
-            visibility: visible;
+            display: block;
             color:rgb(30, 144, 255);
         }
         .cow-image {
@@ -90,7 +90,7 @@
             border-color: transparent transparent white transparent;
         }
         .tooltip:hover .cow-text{
-            visibility: visible;
+            display: block;
             color:rgb(223, 126, 142);
         }
         .tooltip:hover .cow-image{
