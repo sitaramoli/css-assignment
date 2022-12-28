@@ -153,19 +153,12 @@ body{
 .feature-card__image{
     height: 440px;
     width: 440px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 10px solid #F9DBDB;
 }
 
-#image-1{
-    background-image: url("images/img-1.jpg");
-    
-}
-
-#image-2{
-    background-image: url("images/img-2.jpg");
-}
-img{
-    max-width: 100%;
-    max-height: 100%;
+.feature-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }

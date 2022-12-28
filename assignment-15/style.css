@@ -1,0 +1,327 @@
+:root {
+    --primary: #7C6957;
+    --secondary: #F5E8DF;
+    --secondary-hover: #CBBFB6;
+    --gradient-start: #FBFD94;
+    --gradient-end: #C8802C;
+    --off-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main background container */
+.main {
+    background-image: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-family: "Open Sans";
+    color: var(--primary);
+
+}
+
+/* bio card container */
+.bio-card {
+    background-color: var(--off-white);
+    width: 60vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+
+}
+
+/* left section of the card */
+.bio-card-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* container for avatar,name and profession */
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* rotate borders on hover */
+.image-section:hover .outer-circle {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.image-section:hover .circle-avatar {
+    animation: rotate-img 2s linear infinite;
+}
+
+@keyframes rotate-img {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* border of outer circle */
+.outer-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width: 240px;
+    padding: 10px;
+    border-top: 4px solid var(--primary);
+    border-right: 4px solid var(--off-white);
+    border-bottom: 4px solid var(--primary);
+    border-left: 4px solid var(--primary);
+    border-radius: 50%;
+}
+
+/* border of inner circle */
+.inner-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 220px;
+    width: 220px;
+    border-top: 4px solid var(--primary);
+    border-right: 4px solid var(--primary);
+    border-bottom: 4px solid var(--primary);
+    border-left: 4px solid var(--off-white);
+    border-radius: 50%;
+}
+
+/* circle avatar container */
+.circle-avatar {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* avatar */
+.circle-avatar img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.intro__name {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.intro__profession {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.button-section {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary);
+    background-color: var(--off-white);
+    padding: 10px auto;
+    text-align: center;
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+}
+
+.button--primary:hover {
+    transition: all 0.5s;
+    background-color: var(--primary);
+    color: var(--off-white);
+}
+
+
+
+.bio-card-reputation {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.bio-card__reputation-button {
+    background-color: var(--secondary);
+    width: 100%;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-card__reputation-button:hover {
+    transition: all 0.5s;
+    background-color: var(--secondary-hover);
+}
+
+.reputation-count {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.reputation-type {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:640px) {
+    .bio-card {
+        height: 90vh;
+        width: 90vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11, 1fr);
+        row-gap: 20px;
+        border-radius: 10px;
+
+    }
+
+    .bio-card-intro {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 10;
+        border-radius: 10px 10px 0 0;
+        justify-content: space-evenly;
+    }
+
+    .bio-card-reputation {
+        flex-direction: row;
+        grid-column: 1 / 2;
+        grid-row: 11 / 12;
+        border-radius: 0 0 10px 10px;
+    }
+    .name {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .profession{
+        font-size: 20px;
+    }
+
+    .button-section {
+        width: 100%;
+        padding: 0 15%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button{
+        font-size: 20px;
+        padding: 10px 10px;
+        width: 45%;
+    }
+
+    .bio-card__reputation-button{
+        height: 100%;
+        width: 33%;
+    }
+    
+    .reputation-count{
+        font-size: 25px;
+    }
+    .reputation-type{
+        font-size: 15px;
+    }
+
+    .posts-button {
+        border-radius: 0 0 0 10px;
+    }
+
+    .followers-button {
+        border-radius: 0 0 10px 0;
+    }
+
+    
+
+    
+}
+
+@media only screen and (min-width:768px) {
+    .button {
+        width: 26vw;
+        height: 8vh;
+    }
+}
+
+
+
+@media only screen and (min-width:1024px) {
+    .bio-card {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        row-gap: 20px;
+        border-radius: 10px;
+
+    }
+
+    .bio-card-intro {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 10;
+        border-radius: 10px 0 0 10px;
+
+    }
+
+    .bio-card-reputation {
+        flex-direction: column;
+        grid-column: 2 / 3;
+        grid-row: 1 / span 10;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .posts-button {
+        border-radius: 0 10px 0 0;
+    }
+
+    .followers-button {
+        border-radius: 0 0 10px 0;
+    }
+
+    .image-section {
+        padding-top: 10%;
+    }
+
+    .button-section {
+        padding-bottom: 10%;
+    }
+
+    .button {
+        width: 13vw;
+        height: 6vh;
+        margin: 10px 0;
+    }
+}
