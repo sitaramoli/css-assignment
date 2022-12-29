@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 100%;
+    font-size: 80%;
 }
 
 /* main background container */
@@ -38,7 +38,7 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
-    border-radius: .7rem;
+    border-radius: 10px;
 
 
 }
@@ -138,12 +138,12 @@ html{
 
 .intro__name {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 
 .intro__profession {
-    font-size: 1.5rem;
+    font-size: 1.88rem;
     font-weight: 400;
 }
 
@@ -156,9 +156,9 @@ html{
 }
 
 .button {
-    width: 13rem;
-    height: 3.9rem;
-    font-size: 1.5rem;
+    width: 16rem;
+    height: 4rem;
+    font-size: 2.25rem;
     font-weight: 600;
     color: var(--primary);
     background-color: var(--off-white);
@@ -180,7 +180,7 @@ html{
     justify-content: space-between;
     grid-column: 1 / 2;
     grid-row: 11 / 12;
-    border-radius: 0 0 .7rem .7rem;
+    border-radius: 0 0 10px 10px;
 
 }
 
@@ -195,10 +195,10 @@ html{
 }
 
 .posts-button{
-    border-radius: 0 0 0 .7rem;
+    border-radius: 0 0 0 10px;
 }
 .followers-button{
-    border-radius: 0 0 .7rem 0;
+    border-radius: 0 0 10px 0;
 }
 
 .bio-card__reputation-button:hover {
@@ -207,50 +207,22 @@ html{
 }
 
 .reputation-count {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 
 .reputation-type {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 /* for medium devices */
 @media only screen and (min-width:768px) {
+    html{
+        font-size: 90%;
+    }
     .bio-card-intro {
         grid-row: 1 / span 9;
-    }
-    
-    /* border of outer circle */
-    .outer-circle {
-        height: 17rem;
-        width: 17rem;
-    }
-    
-    /* border of inner circle */
-    .inner-circle {
-        height: 16rem;
-        width: 16rem;
-    }
-    
-    /* circle avatar container */
-    .circle-avatar {
-        height: 15rem;
-        width: 15rem;
-    }
-    
-    .intro__name {
-        font-size: 3rem;
-    }
-    
-    .intro__profession {
-        font-size: 2rem;
-    }
-    
-    .button {
-        width: 19rem;
-        font-size: 2rem;
     }
     
     .bio-card-reputation { 
@@ -258,19 +230,14 @@ html{
     
     }
     
-    
-    .reputation-count {
-        font-size: 2.5rem;
-    }
-    
-    .reputation-type {
-        font-size: 1.5rem;
-    }
 }
 
 
 /* for large devices */
 @media only screen and (min-width:1024px) {
+    html{
+        font-size: 100%;
+    }
     .bio-card {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: repeat(10, 1fr);
@@ -281,70 +248,23 @@ html{
         grid-row: 1 / span 10;
 
     }
-    .outer-circle {
-       
-        height: 20rem;
-        width: 20rem;
-        
-    }
     
-    /* border of inner circle */
-    .inner-circle {
-       
-        height: 19rem;
-        width: 19rem;
-       
-    }
-    
-    /* circle avatar container */
-    .circle-avatar {
-        height: 18rem;
-        width: 18rem;
-        
-    }
-    .intro__name {
-        font-size: 3rem;
-    }
-    
-    .intro__profession {
-        font-size: 2rem;
-    }
-    
-    .button-section {
-        justify-content: space-between;
-        height: 12rem;
-       
-    }
-    
-    .button {
-        width: 19rem;
-        height: 5rem;
-        font-size: 2.25rem;
-        border-radius: 3rem;
-    }
-
     .bio-card-reputation {
         flex-direction: column;
         grid-column: 2 / 3;
         grid-row: 1 / span 10;
-        border-radius: 0 .7rem .7rem 0;
+        border-radius: 0 10px 10px 0;
     }
     .bio-card__reputation-button {
         height: 32%;
         width: 100%;
         
     }
-    .reputation-count{
-        font-size: 3.5rem;
-    }
-    .reputation-type{
-        font-size: 2rem;
-    }
     .posts-button{
-        border-radius: 0 .7rem 0 0;
+        border-radius: 0 10px 0 0;
     }
     .followers-button{
-        border-radius: 0 0 .7rem 0;
+        border-radius: 0 0 10px 0;
     }
 
 }
