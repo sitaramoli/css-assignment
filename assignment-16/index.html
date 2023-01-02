@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <!-- Navigation -->
         <header class="header">
             <picture class="logo">
@@ -61,8 +61,9 @@
         <!-- features section -->
         <section class="features-section">
             <div class="feature">
-                <picture class="feature__img">
-                    <img src="images/retro-pc.png" alt="retro-pc">
+                <picture >
+                    <img class="feature__img" src="images/retro-pc.png" alt="retro-pc">
+                    <img class="feature__img--hover" src="images/gaming.png" alt="retro-pc">
                 </picture>
                 <div class="feature__content-section">
                     <h2 class="feature__content-section__number">01</h2>
@@ -73,8 +74,9 @@
                 </div>
             </div>
             <div class="feature">
-                <picture class="feature__img">
-                    <img src="images/laptop.png" alt="laptop">
+                <picture >
+                    <img class="feature__img" src="images/laptop.png" alt="laptop">
+                    <img class="feature__img--hover" src="images/gaming.png" alt="laptop">
                 </picture>
                 <div class="feature__content-section">
                     <h2 class="feature__content-section__number">02</h2>
@@ -85,8 +87,9 @@
                 </div>
             </div>
             <div class="feature">
-                <picture class="feature__img">
-                    <img src="images/gaming.png" alt="laptop">
+                <picture>
+                    <img class="feature__img" src="images/gaming.png" alt="laptop">
+                    <img class="feature__img--hover" src="images/gaming.png" alt="gaming">
                 </picture>
                 <div class="feature__content-section">
                     <h2 class="feature__content-section__number">03</h2>
@@ -122,13 +125,11 @@
                 </p>
             </div>
         </section>
-
-        
-    </div>
-    <!-- back to top button -->
+        <!-- back to top button -->
         <div class="scroll-top">
-            <a href="#" class="scroll-top__link"><img src="images/top-arrow.svg" alt="back to top"></a>
+            <a href="#wrapper"><img src="images/top-arrow.svg" alt="back to top"></a>
         </div>
+    </div>
 </body>
 
 </html>
