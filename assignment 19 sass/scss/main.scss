@@ -16,15 +16,15 @@ html {
     display: flex;
     flex-direction: column;
     gap: 100px;
-    .title {
-        @include typography(100px, 500, 100%);
+    .header {
+        @include header;
     }
     .typography {
         display: flex;
         gap: 60px;
         flex-direction: column;
         &__title {
-            @include typography(40px, 400, 100%);
+            @include title;
         }
         &__lists {
             display: flex;
@@ -68,12 +68,12 @@ html {
     }
 
     // color section
-    .color {
+    .colors {
         display: flex;
         flex-direction: column;
         gap: 60px;
         &__title {
-            @include typography(40px, 400, 100%);
+            @include title;
         }
         &__lists {
             display: flex;
@@ -88,7 +88,7 @@ html {
         flex-direction: column;
         gap: 60px;
         &__title {
-            @include typography(40px, 400, 100%);
+            @include title;
         }
         .icons-container {
             padding: 8px;
@@ -100,16 +100,16 @@ html {
 
     // effects section
     .effects {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        &__title {
+            @include title;
+        }
+        &__lists {
             display: flex;
-            flex-direction: column;
-            gap: 60px;
-            &__title {
-                @include typography(40px, 400, 100%);
-            }
-            &__lists{
-                display: flex;
             flex-direction: row;
             gap: 40px;
-            }
+        }
     }
 }
