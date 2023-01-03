@@ -1,6 +1,7 @@
 @import "base.scss";
 
 .card {
+    min-width: 375px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -11,10 +12,8 @@
 
     &__img {
         & img {
-            height: 227px;
-            width: auto;
-            display: block;
-            object-fit: cover;
+            height: auto;
+            max-width: 100%;
         }
     }
     &__title {

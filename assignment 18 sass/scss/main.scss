@@ -35,6 +35,11 @@ html{
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 20px;
+        scrollbar-width: none;
+    }
+    // hide scrollbar for chrome
+    .cards-wrapper::-webkit-scrollbar{
+        display: none;
     }
 }
 
@@ -45,7 +50,7 @@ html{
             row-gap: 30px;
             column-gap: 20px;
             flex-wrap: wrap;
-            flex-grow: 1;
+            // flex-grow: 1;
         }
     }
     
