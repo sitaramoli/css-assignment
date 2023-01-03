@@ -297,10 +297,10 @@ ul {
     width: 40px;
     border: 1px solid var(--light-grey);
     border-radius: 50%;
-    position: fixed;
+    position: sticky;
     /* sticky did not work. why? */
     bottom: 1rem;
-    right: 2rem;
+    left: 100vw;
 }
 
 .scroll-top:hover{
