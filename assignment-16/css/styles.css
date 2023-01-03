@@ -104,12 +104,13 @@ ul {
     /* when hamburger is clicked, show the sidebar nav */
     visibility: visible;
     right: 0;
+    z-index: 1;
 
 }
 
 /* show the close icon when sidebar nav is opened */
 #hamburger-input:checked+#hamburger-nav {
-    z-index:1;
+    z-index:11;
     background-image: url("../images/close-icon.svg");
 }
 
@@ -122,7 +123,7 @@ ul {
     visibility: visible;
     opacity: 0.5;
     height: 100%;
-    width: 30vw;
+    width: 100vw;
     transition: 0.5s;
 }
 
