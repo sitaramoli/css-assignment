@@ -28,23 +28,29 @@
         </div>
 
         <!-- FOR MOBILES -->
-        <div class="hamburger">
+        <div class="hamburger d-md-none">
           <a data-bs-toggle="offcanvas" data-bs-target="#hamburger-menu">
             <i class="bi bi-list" style="color: black; font-size: 30px"></i>
           </a>
-          <div class="offcanvas offcanvas-end" id="hamburger-menu">
-  <div class="offcanvas-header">
-    <h1 class="offcanvas-title">Menu</h1>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="navbar-nav">
-       <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Portal</a></li>
-    </ul>
-  </div>
-</div>
+          <div class="offcanvas offcanvas-end offcanvas-md" id="hamburger-menu">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">Menu</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Portal</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- FOR TABLETS AND DESKTOPS -->
         <nav class="main-navbar navbar navbar-expand justify-content-end">
@@ -77,8 +83,8 @@
           <p class="hero__content__subtitle text-center px-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type and 
-            scrambled it to make a type specimen book.
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
           </p>
         </div>
       </div>
@@ -311,12 +317,14 @@
           class="call-to-action__img"
         />
         <div
-          class="call-to-action__content d-flex flex-column align-items-center justify-content-center">
+          class="call-to-action__content d-flex flex-column align-items-center justify-content-center"
+        >
           <h1 class="call-to-action__content__title text-center px-5">
             When it comes to art, we're up for <em>any challenge</em>
           </h1>
           <p class="call-to-action__content__subtitle text-center px-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore.
           </p>
           <button class="call-to-action__content__button btn btn-light">
             <span class="button-text">Get in touch </span>
