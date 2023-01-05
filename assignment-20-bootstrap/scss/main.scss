@@ -169,6 +169,14 @@ $footer-color: #393939;
     }
 }
 
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
 .main {
     background-color: $background-color;
 }
@@ -177,6 +185,9 @@ nav.main-navbar {
 }
 
 @media screen and (min-width: 768px) {
+    html{
+        font-size: 16px;
+    }
     .hamburger {
         display: none;
     }

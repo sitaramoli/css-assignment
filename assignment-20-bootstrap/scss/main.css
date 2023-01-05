@@ -144,6 +144,14 @@
   transform: rotate(-45deg);
 }
 
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
 .main {
   background-color: rgba(217, 217, 217, 0.4941176471);
 }
@@ -153,6 +161,9 @@ nav.main-navbar {
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
   .hamburger {
     display: none;
   }
