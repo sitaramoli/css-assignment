@@ -3,6 +3,7 @@ $background-color: #d9d9d97e;
 $overlay-color: #000000;
 $white: #fff;
 $footer-color: #393939;
+$carousel-color:#DD7777;
 
 // header section
 .header {
@@ -41,11 +42,12 @@ $footer-color: #393939;
         &__title {
             color: $white;
             z-index: 1;
+            font-size: 3.1rem;
         }
         &__subtitle {
+            font-size: 2rem;
             color: $white;
             z-index: 1;
-            margin: 0;
         }
     }
 }
@@ -53,13 +55,13 @@ $footer-color: #393939;
 // values section
 
 .values {
-    gap: 52px;
+    gap: 3.2rem;
     img {
         max-width: 100%;
         height: auto;
     }
     &__title {
-        font-size: 17px;
+        font-size: 1rem;
         font-weight: 700;
     }
     &__para {
@@ -70,12 +72,12 @@ $footer-color: #393939;
 
 // faqs section
 .faqs {
-    gap: 47px;
+    gap: 3rem;
     &__item {
-        gap: 50px;
+        gap: 3rem;
     }
     .question {
-        font-size: 17px;
+        font-size: 1rem;
         font-weight: 300;
     }
 }
@@ -138,7 +140,7 @@ $footer-color: #393939;
                 a {
                     text-decoration: none;
                     color: $white;
-                    font-size: 15px;
+                    font-size: 1rem;
                     font-weight: 500;
                 }
             }
@@ -154,12 +156,12 @@ $footer-color: #393939;
                 &__title {
                     color: $white;
                     font-weight: 500;
-                    font-size: 24px;
+                    font-size: 1.5rem;
                 }
                 &__action {
                     color: $white;
                     font-weight: 400;
-                    font-size: 15px;
+                    font-size: 1rem;
                     .top-right-arrow::before {
                         transform: rotate(-45deg);
                     }
@@ -184,13 +186,15 @@ nav.main-navbar {
     display: none;
 }
 
-// .carousel-indicators > li{
-//     border-radius: 50%;
-//     width: 12px;
-//     height: 12px;
-//     background-color:crimson;
-// }
+#hero-carousel .carousel-indicators [data-bs-target]{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
 
+}
+#hero-carousel .carousel-indicators .active{
+    background-color: $carousel-color;
+}
 @media screen and (min-width: 768px) {
     html{
         font-size: 16px;

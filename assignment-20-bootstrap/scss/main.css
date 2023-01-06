@@ -33,22 +33,23 @@
 .hero__content__title {
   color: #fff;
   z-index: 1;
+  font-size: 3.1rem;
 }
 .hero__content__subtitle {
+  font-size: 2rem;
   color: #fff;
   z-index: 1;
-  margin: 0;
 }
 
 .values {
-  gap: 52px;
+  gap: 3.2rem;
 }
 .values img {
   max-width: 100%;
   height: auto;
 }
 .values__title {
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .values__para {
@@ -57,13 +58,13 @@
 }
 
 .faqs {
-  gap: 47px;
+  gap: 3rem;
 }
 .faqs__item {
-  gap: 50px;
+  gap: 3rem;
 }
 .faqs .question {
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -119,7 +120,7 @@
 .footer .row .left ul a {
   text-decoration: none;
   color: #fff;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .footer .row .right .footer-card {
@@ -133,12 +134,12 @@
 .footer .row .right .footer-card__title {
   color: #fff;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .footer .row .right .footer-card__action {
   color: #fff;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1rem;
 }
 .footer .row .right .footer-card__action .top-right-arrow::before {
   transform: rotate(-45deg);
@@ -158,6 +159,16 @@ html {
 
 nav.main-navbar {
   display: none;
+}
+
+#hero-carousel .carousel-indicators [data-bs-target] {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+#hero-carousel .carousel-indicators .active {
+  background-color: #DD7777;
 }
 
 @media screen and (min-width: 768px) {
